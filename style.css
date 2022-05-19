@@ -4,6 +4,21 @@
 }
 body{
   margin: 0;
-  background-color: #ECECEC;
   font-family: "vazir";
+  background-color: #ECECEC;
+
+}
+.checked {
+  color: orange;
+}
+.title{
+  color: #004172;
+  margin-bottom: 1rem;
+}
+.information-container{
+  margin-top:5rem;
+  margin-bottom:5rem;
+}
+.text-color{
+  color:#004172
 }
