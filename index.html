@@ -78,7 +78,7 @@
     </div>
 
     <!-- skills -->
-    <div class="d-flex justify-content-end"  style="margin-top:5rem;">
+    <div class="d-flex justify-content-end overflow-hidden">
       <article id="skill-container" class="container animate__animated opacity-0">
         <h3 class="text-end title animate__animated">
           مهارت های من
@@ -157,7 +157,7 @@
   window.onscroll = function(event){
     const el = document.getElementById('skill-container');
     var position = el.getBoundingClientRect();
-    if(position.top < window.innerHeight && position.bottom + 500 >= 0) {
+    if(position.top < window.innerHeight && position.bottom >= 100) {
       el.classList.add("animate__slideInRight");
       el.classList.add("opacity-100");
     } 
