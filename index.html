@@ -78,7 +78,7 @@
     </div>
 
     <!-- skills -->
-    <div class="d-flex justify-content-end animate__animated" id="skill-container" style="margin-top:5rem;">
+    <div class="d-flex justify-content-end animate__animated skills" id="skill-container" style="margin-top:5rem;">
       <article class="container">
         <h3 class="text-end title">
           مهارت های من
@@ -158,7 +158,7 @@
     const el = document.getElementById('skill-container');
     var position = el.getBoundingClientRect();
     if(position.top < window.innerHeight && position.bottom >= 0) {
-      el.classList.add("animate__jackInTheBox");
+      el.classList.add("translate-skills");
     } 
   }
 </script>
