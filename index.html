@@ -79,7 +79,7 @@
 
     <!-- skills -->
     <div class="d-flex justify-content-end"  style="margin-top:5rem;">
-      <article id="skill-container" class="container animate__animated animate__delay-0.5s">
+      <article id="skill-container" class="container animate__animated opacity-0">
         <h3 class="text-end title animate__animated">
           مهارت های من
         </h3>
@@ -159,7 +159,7 @@
     var position = el.getBoundingClientRect();
     if(position.top < window.innerHeight && position.bottom >= 0) {
       el.classList.add("animate__slideInRight");
-      el.classList.add("d-inline");
+      el.classList.add("opacity-100");
     } 
   }
 </script>
