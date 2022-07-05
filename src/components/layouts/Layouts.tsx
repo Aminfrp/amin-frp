@@ -6,7 +6,7 @@ import Body from "./body/Body";
 
 const Layouts = () => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} style={{backgroundColor:"#E1E1E1"}}>
       <Grid item xs={2}>
         <SideBar/>
       </Grid>
