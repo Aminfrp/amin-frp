@@ -1,6 +1,7 @@
 import { Avatar, Card, CardContent, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Info from './info/Info';
+import Langueages from './languages';
 import Socials from './social/Socials';
 const Sidebar = () => {
   return (
@@ -21,6 +22,8 @@ const Sidebar = () => {
       <Socials />
       <Divider variant="middle" style={{ width:"100%", marginBottom:"26px"}} />
       <Info />
+      <Divider variant="middle" style={{ width:"100%", margin:"25px 0"}} />
+      <Langueages />
     </CardContent>
   </Card>
   )
