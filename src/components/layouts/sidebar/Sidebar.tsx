@@ -1,9 +1,11 @@
 import { Avatar, Card, CardContent, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
+import ExtraSkills from './exteraSkills';
 import Info from './info/Info';
 import Langueages from './languages';
 import Skills from './skills';
 import Socials from './social/Socials';
+
 const Sidebar = () => {
   return (
   <Card variant="outlined">
