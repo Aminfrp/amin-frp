@@ -71,7 +71,8 @@ const Body: React.FC<Props> = (props:Props) => {
           <SubjectItem
             name={"Ati Shahr"}
             description={
-              "Shiraz University (Persian: دانشگاه شیراز Dāneshgāh-e-Shirāz, formerly known as Pahlavi University دانشگاه پهلوی Dāneshgāh-e Pahlavi) is a public university located in Shiraz, Fars, Iran, established in 1946. Being one of the oldest and most prestigious modern universities in Iran"
+              `Ati Iranian Smart City was established in 2013 by employing a group of elites to produce indigenous technological knowledge to serve the goals of the smart city and with a transcendent view of creating smart cities in the Iranian style, in the field of all micropayments and related hardware and software production.
+              The future management of the city consists of three areas of innovation and prosperity, production of equipment and implementation of added value solutions. In the meantime, the research and development unit is of special importance as an arm of innovation.`
             }
             avatar={"/ati.png"}
           />
