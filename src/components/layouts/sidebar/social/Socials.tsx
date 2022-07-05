@@ -7,17 +7,17 @@ const Socials = () => {
   const theme = useTheme();
   return (
     <Grid container spacing={2} justifyContent={"center"} mb={"25px"}>
-      <Grid item>
+      <Grid item onClick={()=>{window.location.href="https://www.facebook.com/profile.php?id=100008454552028"}}>
         <Avatar sx={{ width: 30, height: 30 }} style={{backgroundColor:theme.palette.secondary.main}}>
           <FacebookIcon fontSize="small" color='info'/>
         </Avatar>
       </Grid>
-      <Grid item>
+      <Grid item onClick={()=>{window.location.href="https://www.linkedin.com/in/amin-firouzpour-8394a8207"}}>
         <Avatar sx={{ width: 30, height: 30 }} style={{backgroundColor:theme.palette.secondary.main}}>
             <LinkedInIcon fontSize="small" color='info'/>
         </Avatar>
       </Grid>
-      <Grid item>
+      <Grid item onClick={()=>{window.location.href="https://web.whatsapp.com/aminfrp"}}>
         <Avatar sx={{ width: 30, height: 30 }} style={{backgroundColor:theme.palette.secondary.main}}>
             <WhatsAppIcon fontSize="small" color='info'/>
         </Avatar>

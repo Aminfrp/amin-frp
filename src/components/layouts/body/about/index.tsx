@@ -54,10 +54,7 @@ const About = ({ toggleDrawer }: { toggleDrawer: any }) => {
                   fontWeight={400}
                   color="#767676"
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Voluptates earum blanditiis facilis ullam ipsum illum placeat
-                  id repellat, ducimus accusantium repellendus suscipit
-                  voluptatibus cum totam consectetur odit at deserunt! Ex.
+                  Hello, I am Amin and I am 25 years old. I have 4 years of experience in the front end area in different companies. Welcome to my website
                 </Typography>
               </Grid>
               <Grid item>
