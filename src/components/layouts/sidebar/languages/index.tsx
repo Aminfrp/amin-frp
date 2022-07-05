@@ -5,7 +5,7 @@ const Langueages = () => {
   return (
     <Grid container flexDirection="column">
       <Grid item mb={"15px"}>
-        <Typography variant="h4" fontSize={18}>Languages</Typography>
+        <Typography variant="h4" fontSize={18} fontWeight={45}>Languages</Typography>
       </Grid>
       {/* languages */}
       <Grid item>
