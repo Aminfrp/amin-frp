@@ -5,10 +5,16 @@ import Info from "./info/Info";
 import Langueages from "./languages";
 import Skills from "./skills";
 import Socials from "./social/Socials";
+import CloseIcon from "@mui/icons-material/Close";
 
-const Sidebar = () => {
+const Sidebar = ({ toggleDrawer }: { toggleDrawer: any }) => {
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" style={{ overflow: "auto" }}>
+      <CloseIcon
+        style={{ margin: "10px" }}
+        onClick={toggleDrawer}
+        className="mobile"
+      />
       <CardContent
         sx={{
           display: "flex",
@@ -56,7 +62,7 @@ const Sidebar = () => {
           <Typography variant="button" fontWeight={600}>
             DOWNLOAD CV{" "}
             <img
-              src={"download.svg"}
+              src={"/download.svg"}
               style={{ marginLeft: "10px" }}
               alt="downlaod"
             />

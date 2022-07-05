@@ -2,22 +2,41 @@ import {
   Button,
   Card,
   CardContent,
-  Container,
   Grid,
   Typography,
   useTheme,
 } from "@mui/material";
+import NightsStayIcon from "@mui/icons-material/NightsStay";
+import { ColorModeContext } from "../../../../App";
+import { useContext } from "react";
+import LightModeIcon from '@mui/icons-material/LightMode';
+import MenuIcon from '@mui/icons-material/Menu';
 
-const About = () => {
+const About = ({ toggleDrawer }: { toggleDrawer: any }) => {
   const theme = useTheme();
+  const colorMode = useContext(ColorModeContext);
+
   return (
-    <Card>
+    <Card style={{ padding: 0 }}>
       <CardContent style={{ padding: 0 }}>
+        <Grid container justifyContent={"space-between"} flexDirection={"row-reverse"} py={3} px={4}>
+          <Grid item style={{float:"right"}} onClick={colorMode.toggleColorMode}>
+            {theme.palette.mode==="dark"? <NightsStayIcon /> :<LightModeIcon />}
+          </Grid>
+          <Grid item onClick={toggleDrawer} className="mobile">
+            <MenuIcon />
+          </Grid>
+        </Grid>
         <Grid container>
           <Grid md={3} xs={12} item height={460}>
-            <img src="no_bg.png" alt="profile" width={"100%"} height={"100%"} />
+            <img
+              src="/no_bg.png"
+              alt="profile"
+              width={"100%"}
+              height={"100%"}
+            />
           </Grid>
-          <Grid md={8} xs={12} display="flex" alignItems={"center"} item>
+          <Grid md={8} xs={12} display="flex" p={5} alignItems={"center"} item>
             <Grid container alignItems={"center"}>
               <Grid item mb={"18px"}>
                 <Typography variant="h1" fontSize={48} fontWeight={700}>
@@ -48,7 +67,7 @@ const About = () => {
                   style={{ width: 150, height: 50 }}
                 >
                   <Typography variant="button" fontWeight={600}>
-                    HIRE ME <img src="next.svg" alt="next" />
+                    HIRE ME <img src="/next.svg" alt="next" />
                   </Typography>
                 </Button>
               </Grid>

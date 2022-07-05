@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, useTheme } from "@mui/material";
 
 const Subject = ({
   name,
@@ -11,7 +11,7 @@ const Subject = ({
     <div>
       <Grid container alignItems={"center"} flexDirection="column">
         <Grid item mb={"25px"}>
-          <Typography fontWeight={700} variant="h2" fontSize={32}>
+          <Typography fontWeight={700} variant="h2" fontSize={32} color="textPrimary">
             {name}
           </Typography>
         </Grid>

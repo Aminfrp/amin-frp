@@ -1,23 +1,37 @@
-import { Grid } from "@mui/material";
-import React from "react"
-import SideBar from "./sidebar/Sidebar"
-import Menue from "./menu/Menu"
+import { Drawer, Grid, useTheme } from "@mui/material";
+import SideBar from "./sidebar/Sidebar";
 import Body from "./body/Body";
+import { useState } from "react";
 
 const Layouts = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const toggleDrawer = (): any => setOpen((pre) => !pre);
+  const theme = useTheme();
   return (
-    <Grid container spacing={2} style={{backgroundColor:"#E1E1E1"}}>
-      <Grid item xs={2}>
-        <SideBar/>
+    <Grid
+      container
+      spacing={2}
+      style={{
+        backgroundColor:
+          theme.palette.mode === "dark"
+            ? theme.palette.success.dark
+            : theme.palette.success.light,
+      }}
+      p={1}
+    >
+      <Grid item sm={12} md={2} id="body" xs={12}>
+        <div className="desk">
+          <SideBar toggleDrawer={toggleDrawer} />
+        </div>
+        <Drawer anchor={"left"} open={open} onClose={toggleDrawer}>
+          <SideBar toggleDrawer={toggleDrawer} />
+        </Drawer>
       </Grid>
-      <Grid item xs >
-        <Body/>
-      </Grid>
-      <Grid item xs={.7}>
-        <Menue/>
+      <Grid item xs id="body" p={2}>
+        <Body toggleDrawer={toggleDrawer} />
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 
-export default Layouts
+export default Layouts;
