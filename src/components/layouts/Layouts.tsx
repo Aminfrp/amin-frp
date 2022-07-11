@@ -18,6 +18,7 @@ const Layouts = () => {
             : theme.palette.success.light,
       }}
       p={1}
+      id="body"
     >
       <Grid item sm={12} md={2} id="body" xs={12}>
         <div className="desk">

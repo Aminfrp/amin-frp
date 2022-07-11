@@ -57,13 +57,13 @@ const About = ({ toggleDrawer }: { toggleDrawer: any }) => {
                   Hello, I am Amin and I am 25 years old. I have 4 years of experience in the front end area in different companies. Welcome to my website
                 </Typography>
               </Grid>
-              <Grid item>
+              <Grid item className="mobile">
                 <Button
                   color="secondary"
                   variant="contained"
                   style={{ width: 150, height: 50 }}
                 >
-                  <Typography variant="button" fontWeight={600}>
+                  <Typography variant="button" fontWeight={600} onClick={toggleDrawer} >
                     HIRE ME <img src="/next.svg" alt="next" />
                   </Typography>
                 </Button>

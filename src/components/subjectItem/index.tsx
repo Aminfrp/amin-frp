@@ -1,4 +1,4 @@
-import { Avatar, Card, CardContent, Grid, Typography } from "@mui/material";
+import { Avatar, Button, Card, CardActions, CardContent, Grid, Typography } from "@mui/material";
 
 const SubjectItem = ({
   name,
@@ -10,7 +10,7 @@ const SubjectItem = ({
   avatar: string;
 }) => {
   return (
-    <Card style={{ maxWidth: 230, margin: "10px" }}>
+    <Card style={{ maxWidth: 230, margin: "10px",maxHeight:360 }}>
       <CardContent>
         <Grid container flexDirection={"column"}>
           <Grid
@@ -31,16 +31,25 @@ const SubjectItem = ({
               {name}
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item style={{textOverflow:"ellipsis",overflow: "hidden"}}>
             <Typography
               fontWeight={400}
               fontSize={12}
               color="#767676"
               maxWidth={210}
+              style={{height:"90px",overflow:"hidden"}}
               textAlign={"center"}
+              textOverflow="ellipsis"
             >
               {description}
             </Typography>
+            <CardActions>
+              <Button
+                color="secondary"
+              >
+               <Typography color="secondary" variant="body1" fontSize={12}>learn more</Typography>
+              </Button>
+            </CardActions>
           </Grid>
         </Grid>
       </CardContent>
