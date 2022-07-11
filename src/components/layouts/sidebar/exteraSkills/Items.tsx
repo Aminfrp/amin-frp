@@ -5,7 +5,7 @@ const Items = ({  name }: { name: string }) => {
     <>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Typography variant="body1" fontSize={15} color="#767676">
-        <img src={"/icons.svg"} alt="extera" style={{marginRight:"15px"}}/>
+        <img src={"https://www.amin-frp.ir/icons.svg"} alt="extera" style={{marginRight:"15px"}}/>
           {name}
         </Typography>
       </div>
