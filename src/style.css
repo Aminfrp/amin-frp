@@ -7,6 +7,9 @@
 *{
   margin: 0;
 }
+#image-profile{
+  max-width: 21%;
+}
 
 @media only screen and (max-width: 600px)  {
   .mobile{
@@ -20,5 +23,8 @@
   }
   *{
     margin: 0;
+  }
+  #image-profile{
+    max-width: 100%;
   }
 }

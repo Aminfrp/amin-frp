@@ -28,7 +28,7 @@ const About = ({ toggleDrawer }: { toggleDrawer: any }) => {
           </Grid>
         </Grid>
         <Grid container>
-          <Grid md={3} xs={12} item height={460}>
+          <Grid id="image-profile" item height={460}>
             <img
               src="/no_bg.png"
               alt="profile"
