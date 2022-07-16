@@ -21,7 +21,7 @@ const Socials = () => {
           </IconButton>
         </Avatar>
       </Grid>
-      <Grid item onClick={()=>{window.location.href="https://wa.me/09175353201"}}>
+      <Grid item onClick={()=>{window.location.href="https://wa.me/+989175353201"}}>
         <Avatar sx={{ width: 30, height: 30 }} style={{backgroundColor:theme.palette.secondary.main}}>
           <IconButton>
             <WhatsAppIcon fontSize="small" color='info'/>
