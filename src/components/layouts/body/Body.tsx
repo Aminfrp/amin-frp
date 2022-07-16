@@ -56,7 +56,7 @@ const Body: React.FC<Props> = (props:Props) => {
           <Subject
             name="Experiences"
             description="
-        These are my universities in Shiraz and these universities are among the best universities in this city"
+            I have had the honor of working in these prestigious companies"
           />
         </Grid>
         <Grid container justifyContent={"center"} spacing={2}>
