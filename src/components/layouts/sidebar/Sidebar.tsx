@@ -23,12 +23,12 @@ const Sidebar = ({ toggleDrawer }: { toggleDrawer: any }) => {
           alignItems: "center",
         }}
       >
-        <Avatar
+        {/* <Avatar
           alt="Remy Sharp"
           src="/profile.jpeg"
           imgProps={{ style: { objectFit: "fill", height: "140%" } }}
           sx={{ width: 160, height: 160 }}
-        />
+        /> */}
         <Typography variant="h4" fontSize={"18px"} mt={"31px"} mb={"15px"}>
           Amin Firouzpour
         </Typography>
