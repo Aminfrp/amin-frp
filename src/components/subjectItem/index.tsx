@@ -4,10 +4,12 @@ const SubjectItem = ({
   name,
   description,
   avatar,
+  url
 }: {
   name: string;
   description: string;
   avatar: string;
+  url:string
 }) => {
   return (
     <Card style={{ maxWidth: 230, margin: "10px",maxHeight:360 }}>
@@ -46,6 +48,7 @@ const SubjectItem = ({
             <CardActions>
               <Button
                 color="secondary"
+                href={url}
               >
                <Typography color="secondary" variant="body1" fontSize={12}>learn more</Typography>
               </Button>

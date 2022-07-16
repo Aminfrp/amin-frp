@@ -33,6 +33,7 @@ const Body: React.FC<Props> = (props:Props) => {
               "The Islamic Azad University, Shiraz Branch (Persian: دانشگاه آزاد اسلامی واحد شیراز, Danushgah-e Âzad-e Eslâmi-ye Vahed-e Shiraz) is a private university located in Shiraz, Iran."
             }
             avatar={"/dariyoon.jpg"}
+            url="https://shiraz.iau.ir/"
           />
 
           <SubjectItem
@@ -41,6 +42,7 @@ const Body: React.FC<Props> = (props:Props) => {
               "Shiraz University (Persian: دانشگاه شیراز Dāneshgāh-e-Shirāz, formerly known as Pahlavi University دانشگاه پهلوی Dāneshgāh-e Pahlavi) is a public university located in Shiraz, Fars, Iran, established in 1946. Being one of the oldest and most prestigious modern universities in Iran"
             }
             avatar={"/bahonar.jpg"}
+            url="https://shiraz.iau.ir/"
           />
         </Grid>
       </Grid>
@@ -66,6 +68,7 @@ const Body: React.FC<Props> = (props:Props) => {
               "Novin Dev is a software company trying to reach international standards in development in order to make it's way in international market and to serve it's employees to the highest potentials"
             }
             avatar={"/Novin.svg"}
+            url="https://novin.dev/"
           />
 
           <SubjectItem
@@ -75,6 +78,7 @@ const Body: React.FC<Props> = (props:Props) => {
               The future management of the city consists of three areas of innovation and prosperity, production of equipment and implementation of added value solutions. In the meantime, the research and development unit is of special importance as an arm of innovation.`
             }
             avatar={"/ati.png"}
+            url="https://atishahr.net/"
           />
         </Grid>
       </Grid>
