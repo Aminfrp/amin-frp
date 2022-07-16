@@ -28,7 +28,7 @@ const Socials = () => {
           </IconButton>
         </Avatar>
       </Grid>
-      <Grid item>
+      <Grid item onClick={()=>{window.location.href="https://www.instagram.com/aminfrpr/"}}>
         <Avatar sx={{ width: 30, height: 30 }} style={{backgroundColor:theme.palette.secondary.main}}>
           <IconButton>
             <InstagramIcon fontSize="small" color='info'/>
