@@ -33,6 +33,7 @@
       }
       window.addEventListener('beforeinstallprompt', (e) => {
         setTimeout(() => {
+          e.preventDefault();
           e.prompt();
         },5000)
       })
